@@ -1,7 +1,5 @@
 package ua.edu.ucu.apps;
 
-package ucu.edu.ua;
-
 import java.io.IOException;
 import java.sql.SQLException;
 
