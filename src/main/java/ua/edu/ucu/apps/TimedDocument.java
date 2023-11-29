@@ -27,7 +27,7 @@ public class TimedDocument implements Document {
     }
 
     private void logExecutionTime(Document doc, long executionTime) {
-        String type = (doc instanceof SmartDocument) ? "SmartDocument" : "CachedDocument";
+        String type = (doc instanceof SmartDocument) ? "SmartDocument" : "CacheDocument";
         System.out.println("Time of " + type + ": " + executionTime / 1000.0);
     }
 }
