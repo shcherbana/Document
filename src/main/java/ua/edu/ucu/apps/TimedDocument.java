@@ -1,3 +1,4 @@
+package ua.edu.ucu.apps;
 import java.io.IOException;
 import java.sql.SQLException;
 
