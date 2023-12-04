@@ -1,7 +1,6 @@
 package ua.edu.ucu.apps;
 import java.io.IOException;
 import java.sql.SQLException;
-
 import lombok.AllArgsConstructor;
 
 @AllArgsConstructor
@@ -11,7 +10,7 @@ public class TimedDocument implements Document {
     @Override
     public String parse() throws IOException, SQLException {
         String smartTxt = measureTime(new SmartDocument(path));
-        String cachedTxt = measureTime(new CachedDocument(path));
+        String cachedTxt = measureTime(new CacheDocument(path));
 
         return cachedTxt != null ? cachedTxt : smartTxt;
     }

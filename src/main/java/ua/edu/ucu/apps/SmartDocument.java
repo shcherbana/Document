@@ -12,6 +12,8 @@ import com.google.cloud.vision.v1.TextAnnotation;
 import lombok.AllArgsConstructor;
 import lombok.SneakyThrows;
 
+import java.io.IOException;
+import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -20,7 +22,7 @@ public class SmartDocument implements Document {
     public String gcsPath;
 
     @SneakyThrows
-    public String parse() {
+    public String parse() throws IOException, SQLException {
         List<AnnotateImageRequest> requests = new ArrayList<>();
 
         ImageSource imgSource = ImageSource.newBuilder().setGcsImageUri(gcsPath).build();

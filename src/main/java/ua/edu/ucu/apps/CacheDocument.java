@@ -1,4 +1,6 @@
 package ua.edu.ucu.apps;
+import lombok.AllArgsConstructor;
+
 import java.io.IOException;
 import java.sql.Connection;
 
