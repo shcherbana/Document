@@ -8,7 +8,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 
 @AllArgsConstructor
-public class CacheDocument implements Document {
+public class CasheDocument implements Document {
 
     private final String path;
     private static final String SELECT_QUERY = "SELECT text FROM documents WHERE path = ?";
